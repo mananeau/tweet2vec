@@ -12,4 +12,4 @@ resultpath="result/"
 mkdir -p $resultpath
 
 # test
-python encode_char.py $datafile $modelpath $resultpath
+python2.7 encode_char.py $datafile $modelpath $resultpath
