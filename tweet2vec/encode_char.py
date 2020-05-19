@@ -87,9 +87,9 @@ def main(args):
 
     # Save
     print("Saving...")
-    with io.open('%s/predicted_tags.txt'%save_path,'w') as f:
-        for item in out_pred:
-            f.write(item + '\n')
+    #with io.open('%s/predicted_tags.txt'%save_path,'w') as f:
+    #    for item in out_pred:
+    #        f.write(item + '\n')
     with open('%s/embeddings.npy'%save_path,'w') as f:
         np.save(f,np.asarray(out_emb))
 
